@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1d3557;
+    color: #f1faee;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tribute-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Introduction Section */
+.introduction h2 {
+    color: #457b9d;
+}
+
+.introduction p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/* Timeline Section */
+.timeline h2 {
+    color: #1d3557;
+    margin-top: 20px;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    background: #a8dadc;
+    color: #1d3557;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Quotes Section */
+.quotes h2 {
+    color: #457b9d;
+    margin-top: 20px;
+}
+
+blockquote {
+    background: #f1faee;
+    border-left: 5px solid #e63946;
+    margin: 10px 0;
+    padding: 10px;
+    font-style: italic;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d62828;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #1d3557;
+    color: #f1faee;
+}

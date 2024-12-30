@@ -1,0 +1,114 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator Styling */
+.calculator {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 2px solid #fff;
+}
+
+.display {
+    background-color: #f7f7f7;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    color: #444;
+    border-bottom: 3px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+/* Button Styling */
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Number Buttons */
+.btn:nth-child(1),
+.btn:nth-child(6),
+.btn:nth-child(7),
+.btn:nth-child(10),
+.btn:nth-child(11),
+.btn:nth-child(14),
+.btn:nth-child(15),
+.btn:nth-child(18) {
+    background: linear-gradient(to bottom right, #34ace0, #227093);
+}
+
+.btn:nth-child(1):hover {
+    background: linear-gradient(to bottom right, #227093, #34ace0);
+}
+
+/* Operator Buttons */
+.btn:nth-child(2),
+.btn:nth-child(3),
+.btn:nth-child(4),
+.btn:nth-child(8),
+.btn:nth-child(12),
+.btn:nth-child(16) {
+    background: linear-gradient(to bottom right, #ff793f, #ff5252);
+}
+
+.btn:nth-child(2):hover {
+    background: linear-gradient(to bottom right, #ff5252, #ff793f);
+}
+
+/* Special Buttons */
+.btn:nth-child(5) {
+    background: linear-gradient(to bottom right, #2ed573, #1e90ff);
+}
+
+.btn:nth-child(5):hover {
+    background: linear-gradient(to bottom right, #1e90ff, #2ed573);
+}
+
+.btn-equal {
+    background: linear-gradient(to bottom right, #f79f1f, #ff3f34);
+    grid-column: span 2;
+}
+
+.btn-equal:hover {
+    background: linear-gradient(to bottom right, #ff3f34, #f79f1f);
+}
+
+.btn-zero {
+    grid-column: span 2;
+    background: linear-gradient(to bottom right, #ffdd59, #ffaf40);
+}
+
+.btn-zero:hover {
+    background: linear-gradient(to bottom right, #ffaf40, #ffdd59);
+}
+
+/* Button Interaction */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}

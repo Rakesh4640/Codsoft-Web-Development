@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, section, footer {
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a, .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover, .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.features, .about, .services {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #f7d794, #786fa6);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.services .service-item {
+    margin: 20px;
+    background: #d1ccc0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+/* General Image Styling */
+img {
+    max-width: 100%; /* Ensures images do not overflow their container */
+    height: auto;    /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
+}
+
+/* Specific Section Adjustments */
+.about .image img {
+    max-width: 300px; /* Limit the size of the image in the About Us section */
+    margin: 0 auto;   /* Center the image */
+    display: block;   /* Center alignment */
+}
+
+.services .service-item img {
+    max-width: 150px; /* Limit size of images in the Services section */
+    margin: 10px auto; /* Adds spacing and centers images */
+    display: block;
+}
